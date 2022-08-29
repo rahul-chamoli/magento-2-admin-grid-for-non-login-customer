@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<!--
+/**
+ * Module Notlogin New Admin Menu
+ * @package Subscriber/Notlogin
+*/
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+	<menu>
+		<add action="notlogin/customrule/index" id="Subscriber_Notlogin::notlogin_customrule" module="Subscriber_Notlogin" resource="Subscriber_Notlogin::CustomRule" sortOrder="22" title="Non login customer"/>
+
+	</menu>
+</config>

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>  
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    
+    <type name="Subscriber\Notlogin\Model\ResourceModel\CustomRule\Grid\Collection">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">notlogin_customrule</argument>
+            <argument name="eventPrefix" xsi:type="string">cq_records_grid_collection</argument>
+            <argument name="eventObject" xsi:type="string">cq_grid_records_collection</argument>
+            <argument name="resourceModel" xsi:type="string">Subscriber\Notlogin\Model\ResourceModel\Grid</argument>
+        </arguments>
+    </type>
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="notlogin_customrule_listing_data_source" xsi:type="string">Subscriber\Notlogin\Model\ResourceModel\CustomRule\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+</config>
